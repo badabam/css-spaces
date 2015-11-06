@@ -1,0 +1,44 @@
+@each $name, $size in $sizes {
+
+  /* padding-top */
+  .#{$prefix}mt-#{$name} {
+    padding-top: #{$size} !important;
+  }
+  /* padding-right */
+  .#{$prefix}mr-#{$name} {
+    padding-right: #{$size} !important;
+  }
+  /* padding-bottom */
+  .#{$prefix}mb-#{$name} {
+    padding-bottom: #{$size} !important;
+  }
+  /* padding-left */
+  .#{$prefix}ml-#{$name} {
+    padding-left: #{$size} !important;
+  }
+
+  /* horizontal paddings */
+  .#{$prefix}mh-#{$name} {
+    padding-left: #{$size} !important;
+    padding-right: #{$size} !important;
+  }
+  /* vertical paddings */
+  .#{$prefix}mv-#{$name} {
+    padding-top: #{$size} !important;
+    padding-bottom: #{$size} !important;
+  }
+  /* all paddings */
+  .#{$prefix}m-#{$name} {
+    padding: #{$size} !important;
+  }
+}
+
+/* all paddings: auto */
+.m#{$prefix}-a {
+  padding: auto !important;
+}
+
+/* all paddings: 0 ("null") */
+.m#{$prefix}-n {
+  padding: 0 !important;
+}

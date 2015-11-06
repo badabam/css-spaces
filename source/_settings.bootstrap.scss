@@ -1,0 +1,22 @@
+// optional prefix to prevent naming collisions
+$prefix: 'bs-';
+
+// sizes
+$xxs: 2px;
+$xs: 4px;
+$s: 8px;
+$m: 16px;
+$l: 32px;
+$xl: 64px;
+$xxl: 128px;
+
+
+$sizes: (  a: auto,
+           n: 0,
+         xxs: $xxs,
+          xs: $xs,
+          sm: $s,
+          md: $m,
+          lg: $l,
+          xl: $xl,
+         xxl: $xxl);

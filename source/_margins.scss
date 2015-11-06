@@ -1,0 +1,87 @@
+@each $name, $size in $sizes {
+
+  /* margin-top */
+  .#{$prefix}mt-#{$name} {
+    margin-top: #{$size} !important;
+  }
+  /* margin-right */
+  .#{$prefix}mr-#{$name} {
+    margin-right: #{$size} !important;
+  }
+  /* margin-bottom */
+  .#{$prefix}mb-#{$name} {
+    margin-bottom: #{$size} !important;
+  }
+  /* margin-left */
+  .#{$prefix}ml-#{$name} {
+    margin-left: #{$size} !important;
+  }
+
+  /* horizontal margins */
+  .#{$prefix}mh-#{$name} {
+    margin-left: #{$size} !important;
+    margin-right: #{$size} !important;
+  }
+  /* vertical margins */
+  .#{$prefix}mv-#{$name} {
+    margin-top: #{$size} !important;
+    margin-bottom: #{$size} !important;
+  }
+  /* all margins */
+  .#{$prefix}m-#{$name} {
+    margin: #{$size} !important;
+  }
+}
+
+/* all margins: auto */
+.m#{$prefix}-a {
+  margin: auto !important;
+}
+
+/* all margins: 0 ("null") */
+.m#{$prefix}-n {
+  margin: 0 !important;
+}
+
+/* NEGATIVE MARGINS */
+@each $name, $size in $sizes {
+
+  // DON'T run, if it is 'auto'
+  // (because '-auto;' is not a valid value)
+  @if $size != auto {
+
+    /* margin-top */
+    .#{$prefix}mt--#{$name} {
+      margin-top: -#{$size} !important;
+    }
+    /* margin-right */
+    .#{$prefix}mr--#{$name} {
+      margin-right: -#{$size} !important;
+    }
+    /* margin-bottom */
+    .#{$prefix}mb--#{$name} {
+      margin-bottom: -#{$size} !important;
+    }
+    /* margin-left */
+    .#{$prefix}ml--#{$name} {
+      margin-left: -#{$size} !important;
+    }
+
+    /* horizontal margins */
+    .#{$prefix}mh--#{$name} {
+      margin-left: -#{$size} !important;
+      margin-right: -#{$size} !important;
+    }
+    /* vertical margins */
+    .#{$prefix}mv--#{$name} {
+      margin-top: -#{$size} !important;
+      margin-bottom: -#{$size} !important;
+    }
+    /* all margins */
+    .#{$prefix}m--#{$name} {
+      margin: -#{$size} !important;
+    }
+
+  }
+  // end @if
+}
