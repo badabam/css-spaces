@@ -20,7 +20,7 @@ Include the spaces.css to your website:
 ```html
 <head>
 <!-- other stuff -->
-<link rel="stylesheet" href="bower_components/css-spacing/dist/spacing.css">
+<link rel="stylesheet" href="bower_components/css-spacing/dist/spaces.css">
 </head>
 ```
 
