@@ -55,23 +55,28 @@ All properties get `!important` as you should only
 All classes are composed of some simple parts.
 
 #### 1. Property shortcut
-`m` – margin
+```
+m – margin
+```
+
 
 #### 2. Direction
-`t` - top
-`b` - bottom
-`r` – right
-`l` - left
-`v` - vertical
-`h` - horizontal
+```
+t      - top
+b      - bottom
+r      – right
+l      - left
+v      - vertical
+h      - horizontal
 
+```
 No direction specified means *all* directions (like in `margin: 8px;`)
 
 #### 3. Delimiter
-
-`-` - normal delimiter
-`--` - negative value
-
+```
+-      - normal delimiter
+--     - negative value
+```
 Examples:
 ```css
 .mt-xs  { margin-top: 4px }
@@ -80,13 +85,13 @@ Examples:
 
 #### 4. Size
 ```
-xxs:      2px
-xs:       4px
-s:        8px
-m:       16px
-l:       32px
-xl:      64px
-xxl:    128px
+xxs     - 2px
+xs      - 4px
+s       - 8px
+m       - 16px
+l       - 32px
+xl      - 64px
+xxl     - 128px
 ```
 
 #### Possible margin classes
