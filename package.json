@@ -1,6 +1,6 @@
 {
   "name": "css-spacing",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple CSS spacing library for margins, paddings, widths, heights and more written in Sass (SCSS)",
   "main": "gulpfile.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "library",
     "lib"
   ],
-  "author": "Jeremias Erbs <jerry@badabam.de>",
+  "author": "Jeremias Erbs <j@badabam.de>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/badabam/css-spacing/issues"
