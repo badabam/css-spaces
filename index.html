@@ -22,12 +22,144 @@
       <h1>
 <a id="css-spacing" class="anchor" href="#css-spacing" aria-hidden="true"><span class="octicon octicon-link"></span></a>CSS Spacing</h1>
 
-<p>A simple CSS spacing library for margins, paddings, widths, heights and more written in Sass (SCSS)</p>
+<p>A simple CSS spacing library for margins, paddings (and more later ...) written in Sass (SCSS)</p>
+
+<h2>
+<a id="why-another-css-library" class="anchor" href="#why-another-css-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why another css library?</h2>
+
+<p>Many libraries do everything: margins, buttons, grid, helpers. CSS Spacing just adds <strong>some classes to add spaces between elements</strong>. Use it with whatever framework or lib you like.</p>
 
 <h2>
 <a id="install-with-bower" class="anchor" href="#install-with-bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install with bower</h2>
 
 <div class="highlight highlight-source-shell"><pre>$ bower install css-spacing</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Include the spacing.css to your website:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">head</span>&gt;
+<span class="pl-c">&lt;!-- other stuff --&gt;</span>
+&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>bower_components/css-spacing/dist/spacing.css<span class="pl-pds">"</span></span>&gt;
+&lt;/<span class="pl-ent">head</span>&gt;</pre></div>
+
+<p>Add classes to create paddings and margins.</p>
+
+<p>The following header has a <b>m</b>argin-<b>t</b>op with the size of <strong>xl</strong> (which is 64px by default):</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">body</span>&gt;
+&lt;<span class="pl-ent">header</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>mt-xl&gt;This is the header.&lt;/header&gt;</span>
+<span class="pl-s">&lt;/body&gt;</span></pre></div>
+
+<p>This elements have no padding:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">body</span>&gt;
+<span class="pl-c">&lt;!-- Read "margin-vertical-null margin-horizontal-auto" --&gt;</span>
+&lt;<span class="pl-ent">nav</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>mv-n mh-a<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>/<span class="pl-pds">"</span></span>&gt;Home&lt;/<span class="pl-ent">a</span>&gt;
+&lt;/<span class="pl-ent">nav</span>&gt;
+&lt;/<span class="pl-ent">body</span>&gt;</pre></div>
+
+<p>This navigation is centered:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">body</span>&gt;
+<span class="pl-c">&lt;!-- Read "margin-vertical-null margin-horizontal-auto" --&gt;</span>
+&lt;<span class="pl-ent">nav</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>mv-n mh-a<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>/<span class="pl-pds">"</span></span>&gt;Home&lt;/<span class="pl-ent">a</span>&gt;
+&lt;/<span class="pl-ent">nav</span>&gt;
+&lt;/<span class="pl-ent">body</span>&gt;</pre></div>
+
+<p>All properties get <code>!important</code> as you should only</p>
+
+<h3>
+<a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How it works</h3>
+
+<p>All classes are composed of some simple parts.</p>
+
+<h4>
+<a id="1-property-shortcut" class="anchor" href="#1-property-shortcut" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Property shortcut</h4>
+
+<pre><code>m       margin
+OR
+p       padding
+</code></pre>
+
+<h4>
+<a id="2-direction" class="anchor" href="#2-direction" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Direction</h4>
+
+<pre><code>t       top
+b       bottom
+r       right
+l       left
+v       vertical
+h       horizontal
+
+</code></pre>
+
+<p>No direction specified means <em>all</em> directions (like in <code>margin: 8px;</code>)</p>
+
+<h4>
+<a id="3-delimiter" class="anchor" href="#3-delimiter" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Delimiter</h4>
+
+<pre><code>-       normal delimiter
+--      negative value
+</code></pre>
+
+<p>Examples:</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-e">.mt-xs</span>  { <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">4<span class="pl-k">px</span></span> }
+<span class="pl-e">.mt--xs</span> { <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">-4<span class="pl-k">px</span></span> }</pre></div>
+
+<h4>
+<a id="4-size" class="anchor" href="#4-size" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Size</h4>
+
+<pre><code>xxs      2px
+xs       4px
+s        8px
+m        16px
+l        32px
+xl       64px
+xxl      128px
+</code></pre>
+
+<h4>
+<a id="possible-margin-classes" class="anchor" href="#possible-margin-classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Possible margin classes</h4>
+
+<p>This are just a few examples. You'll get the point. Of course you can use all the others from <code>xxs</code> to <code>xxl</code> as well.</p>
+
+<pre><code>mt-xs      margin-top: 2px
+mr-xs      margin-right: 2px
+mb-xs      margin-bottom: 2px
+ml-xs      margin-left: 2px
+
+ml--xs     margin-left: -2px
+
+mh-xs      margin-left: 2px; margin-right: 2px
+mv-xs      margin-top: 2px; margin-bottom: 2px
+
+mh--xs     margin-left: -2px; margin-right: -2px
+
+ml-a       margin-left: auto
+ml-n       margin-left: none
+
+m-xs       margin: 2px
+m-n        margin: none
+m-a        margin: auto
+</code></pre>
+
+<h2>
+<a id="individualize" class="anchor" href="#individualize" aria-hidden="true"><span class="octicon octicon-link"></span></a>Individualize</h2>
+
+<ol>
+<li>Install Sass (google it).</li>
+<li>Run <code>npm install</code>
+</li>
+<li>Change things in <code>source/</code>
+</li>
+<li>Run <code>gulp</code> or <code>gulp deploy</code>
+</li>
+</ol>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/badabam/css-spacing">CSS Spacing</a> is maintained by <a href="https://github.com/badabam">badabam</a>.</span>
