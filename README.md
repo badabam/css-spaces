@@ -98,21 +98,21 @@ xxl     - 128px
 
 This are just a few examples. You'll get the point. Of course you can use all the others from `xxs` to `xxl` as well.
 
-class  | css value (simplified)
--------|--------------
-mt-xs  | margin-top: 2px
-mr-xs  | margin-right: 2px
-mb-xs  | margin-bottom: 2px
-ml-xs  | margin-left: 2px
-ml--xs | margin-left: -2px
-       |
-mh-xs  | margin-left: 2px; margin-right: 2px
-mv-xs  | margin-top: 2px; margin-bottom: 2px
-mh--xs | margin-left: -2px; margin-right: -2px
-       |
-ml-a   | margin-left: auto
-ml-n   | margin-left: none
-       |
-m-xs   | margin: 2px
-m-n    | margin: none
-m-a    | margin: auto
+```
+mt-xs:     margin-top: 2px
+mr-xs:     margin-right: 2px
+mb-xs:     margin-bottom: 2px
+ml-xs:     margin-left: 2px
+ml--xs:    margin-left: -2px
+
+mh-xs:     margin-left: 2px; margin-right: 2px
+mv-xs:     margin-top: 2px; margin-bottom: 2px
+mh--xs:    margin-left: -2px; margin-right: -2px
+
+ml-a:      margin-left: auto
+ml-n:      margin-left: none
+
+m-xs:      margin: 2px
+m-n:       margin: none
+m-a:       margin: auto
+```
