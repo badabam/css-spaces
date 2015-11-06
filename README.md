@@ -116,3 +116,9 @@ m-xs:      margin: 2px
 m-n:       margin: none
 m-a:       margin: auto
 ```
+
+## Individualize
+1. Install Sass (google it).
+2. Run `npm install`
+3. Change things in `source/`
+4. Run `gulp` or `gulp deploy`
