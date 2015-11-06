@@ -1,14 +1,14 @@
 {
-  "name": "css-spacing",
+  "name": "css-spaces",
   "version": "0.1.3",
-  "description": "A simple CSS spacing library for margins, paddings, widths, heights and more written in Sass (SCSS)",
+  "description": "A simple CSS spacing library for margins, paddings, widths, heights and more",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badabam/css-spacing.git"
+    "url": "git+https://github.com/badabam/css-spaces.git"
   },
   "keywords": [
     "css",
@@ -25,9 +25,9 @@
   "author": "Jeremias Erbs <j@badabam.de>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/badabam/css-spacing/issues"
+    "url": "https://github.com/badabam/css-spaces/issues"
   },
-  "homepage": "https://github.com/badabam/css-spacing#readme",
+  "homepage": "https://github.com/badabam/css-spaces#readme",
   "devDependencies": {
     "browser-sync": "^2.9.12",
     "del": "^2.0.2",

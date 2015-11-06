@@ -1,21 +1,21 @@
-# CSS Spacing
+# CSS Spaces
 A simple CSS spacing library for margins, paddings (and more later ...) written in Sass (SCSS)
 
 ## Why another css library?
-Many libraries do everything: margins, buttons, grid, helpers. CSS Spacing just adds **some classes to add spaces between elements**. Use it with whatever framework or lib you like.
+Many libraries do everything: margins, buttons, grid, helpers. CSS Spaces just adds **some classes to add spaces between elements**. Use it with whatever framework or lib you like.
 
 ## Install with bower
 ```shell
-$ bower install css-spacing
+$ bower install css-spaces
 ```
 
 ## Install with npm
 ```shell
-$ npm install css-spacing
+$ npm install css-spaces
 ```
 
 ## Usage
-Include the spacing.css to your website:
+Include the spaces.css to your website:
 
 ```html
 <head>

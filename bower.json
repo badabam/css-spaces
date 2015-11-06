@@ -1,9 +1,9 @@
 {
-  "name": "css-spacing",
-  "description": "A simple CSS spacing library for margins, paddings, widths, heights and more written in Sass (SCSS)",
-  "main": "dist/spacing.css",
+  "name": "css-spaces",
+  "description": "A simple CSS spacing library for margins, paddings, widths, heights and more",
+  "main": "dist/spaces.css",
   "authors": [
-    "Jeremias Erbs <jerry@badabam.de>"
+    "Jeremias Erbs <j@badabam.de>"
   ],
   "license": "MIT",
   "keywords": [
@@ -18,7 +18,7 @@
     "library",
     "lib"
   ],
-  "homepage": "http://badabam.github.io/css-spacing/",
+  "homepage": "http://badabam.github.io/css-spaces/",
   "moduleType": [],
   "ignore": [
     "**/.*",
