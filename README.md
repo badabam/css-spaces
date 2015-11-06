@@ -56,26 +56,28 @@ All classes are composed of some simple parts.
 
 #### 1. Property shortcut
 ```
-m – margin
+m       margin
+OR
+p       padding
 ```
 
 
 #### 2. Direction
 ```
-t      - top
-b      - bottom
-r      – right
-l      - left
-v      - vertical
-h      - horizontal
+t       top
+b       bottom
+r       right
+l       left
+v       vertical
+h       horizontal
 
 ```
 No direction specified means *all* directions (like in `margin: 8px;`)
 
 #### 3. Delimiter
 ```
--      - normal delimiter
---     - negative value
+-       normal delimiter
+--      negative value
 ```
 Examples:
 ```css
@@ -85,13 +87,13 @@ Examples:
 
 #### 4. Size
 ```
-xxs     - 2px
-xs      - 4px
-s       - 8px
-m       - 16px
-l       - 32px
-xl      - 64px
-xxl     - 128px
+xxs      2px
+xs       4px
+s        8px
+m        16px
+l        32px
+xl       64px
+xxl      128px
 ```
 
 #### Possible margin classes
@@ -99,22 +101,24 @@ xxl     - 128px
 This are just a few examples. You'll get the point. Of course you can use all the others from `xxs` to `xxl` as well.
 
 ```
-mt-xs:     margin-top: 2px
-mr-xs:     margin-right: 2px
-mb-xs:     margin-bottom: 2px
-ml-xs:     margin-left: 2px
-ml--xs:    margin-left: -2px
+mt-xs      margin-top: 2px
+mr-xs      margin-right: 2px
+mb-xs      margin-bottom: 2px
+ml-xs      margin-left: 2px
 
-mh-xs:     margin-left: 2px; margin-right: 2px
-mv-xs:     margin-top: 2px; margin-bottom: 2px
-mh--xs:    margin-left: -2px; margin-right: -2px
+ml--xs     margin-left: -2px
 
-ml-a:      margin-left: auto
-ml-n:      margin-left: none
+mh-xs      margin-left: 2px; margin-right: 2px
+mv-xs      margin-top: 2px; margin-bottom: 2px
 
-m-xs:      margin: 2px
-m-n:       margin: none
-m-a:       margin: auto
+mh--xs     margin-left: -2px; margin-right: -2px
+
+ml-a       margin-left: auto
+ml-n       margin-left: none
+
+m-xs       margin: 2px
+m-n        margin: none
+m-a        margin: auto
 ```
 
 ## Individualize
