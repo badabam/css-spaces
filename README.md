@@ -9,6 +9,11 @@ Many libraries do everything: margins, buttons, grid, helpers. CSS Spacing just 
 $ bower install css-spacing
 ```
 
+## Install with npm
+```shell
+$ npm install css-spacing
+```
+
 ## Usage
 Include the spacing.css to your website:
 
