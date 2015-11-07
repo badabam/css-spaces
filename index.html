@@ -46,7 +46,7 @@
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">head</span>&gt;
 <span class="pl-c">&lt;!-- other stuff --&gt;</span>
-&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>bower_components/css-spacing/dist/spaces.css<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>bower_components/css-spaces/dist/spaces.css<span class="pl-pds">"</span></span>&gt;
 &lt;/<span class="pl-ent">head</span>&gt;</pre></div>
 
 <p>Add classes to create paddings and margins.</p>
@@ -54,16 +54,14 @@
 <p>The following header has a <b>m</b>argin-<b>t</b>op with the size of <strong>xl</strong> (which is 64px by default):</p>
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">body</span>&gt;
-&lt;<span class="pl-ent">header</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>mt-xl&gt;This is the header.&lt;/header&gt;</span>
-<span class="pl-s">&lt;/body&gt;</span></pre></div>
+&lt;<span class="pl-ent">header</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>mt-xl<span class="pl-pds">"</span></span>&gt;This is the header.&lt;/<span class="pl-ent">header</span>&gt;
+&lt;/<span class="pl-ent">body</span>&gt;</pre></div>
 
-<p>This elements have no padding:</p>
+<p>These elements have no padding:</p>
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">body</span>&gt;
-<span class="pl-c">&lt;!-- Read "margin-vertical-null margin-horizontal-auto" --&gt;</span>
-&lt;<span class="pl-ent">nav</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>mv-n mh-a<span class="pl-pds">"</span></span>&gt;
-  &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>/<span class="pl-pds">"</span></span>&gt;Home&lt;/<span class="pl-ent">a</span>&gt;
-&lt;/<span class="pl-ent">nav</span>&gt;
+&lt;<span class="pl-ent">h1</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>p-n<span class="pl-pds">"</span></span>&gt;Lorem ipsum&lt;/<span class="pl-ent">h1</span>&gt;
+&lt;<span class="pl-ent">h2</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>p-n<span class="pl-pds">"</span></span>&gt;Dolor sit&lt;/<span class="pl-ent">h2</span>&gt;
 &lt;/<span class="pl-ent">body</span>&gt;</pre></div>
 
 <p>This navigation is centered:</p>
@@ -75,7 +73,7 @@
 &lt;/<span class="pl-ent">nav</span>&gt;
 &lt;/<span class="pl-ent">body</span>&gt;</pre></div>
 
-<p>All properties get <code>!important</code> as you should only</p>
+<p>All properties have <code>!important</code> as you should only add those classes, if you definitely want a specific behavior.</p>
 
 <h3>
 <a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How it works</h3>
@@ -85,33 +83,34 @@
 <h4>
 <a id="1-property-shortcut" class="anchor" href="#1-property-shortcut" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Property shortcut</h4>
 
-<pre><code>m       margin
-OR
-p       padding
+<pre><code>m         margin
+   -OR-
+p         padding
 </code></pre>
 
 <h4>
 <a id="2-direction" class="anchor" href="#2-direction" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Direction</h4>
 
-<pre><code>t       top
-b       bottom
-r       right
-l       left
-v       vertical
-h       horizontal
+<pre><code>t         top
+b         bottom
+r         right
+l         left
+
+v         vertical
+h         horizontal
+
+(none)    No direction specified means *all* directions (like in `margin: 8px;`)
 
 </code></pre>
-
-<p>No direction specified means <em>all</em> directions (like in <code>margin: 8px;</code>)</p>
 
 <h4>
 <a id="3-delimiter" class="anchor" href="#3-delimiter" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Delimiter</h4>
 
-<pre><code>-       normal delimiter
---      negative value
+<pre><code>-         positive value
+--        negative value
 </code></pre>
 
-<p>Examples:</p>
+<p>Example:</p>
 
 <div class="highlight highlight-source-css"><pre><span class="pl-e">.mt-xs</span>  { <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">4<span class="pl-k">px</span></span> }
 <span class="pl-e">.mt--xs</span> { <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">-4<span class="pl-k">px</span></span> }</pre></div>
@@ -119,13 +118,13 @@ h       horizontal
 <h4>
 <a id="4-size" class="anchor" href="#4-size" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Size</h4>
 
-<pre><code>xxs      2px
-xs       4px
-s        8px
-m        16px
-l        32px
-xl       64px
-xxl      128px
+<pre><code>xxs        2px
+xs         4px
+s          8px
+m          16px
+l          32px
+xl         64px
+xxl        128px
 </code></pre>
 
 <h4>
@@ -160,8 +159,7 @@ m-a        margin: auto
 <li>Install Sass (google it).</li>
 <li>Run <code>npm install</code>
 </li>
-<li>Change things in <code>source/</code>
-</li>
+<li>Change things in <code>source/</code> ()</li>
 <li>Run <code>gulp</code> or <code>gulp deploy</code>
 </li>
 </ol>
