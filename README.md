@@ -20,7 +20,7 @@ Include the spaces.css to your website:
 ```html
 <head>
 <!-- other stuff -->
-<link rel="stylesheet" href="bower_components/css-spacing/dist/spaces.css">
+<link rel="stylesheet" href="bower_components/css-spaces/dist/spaces.css">
 </head>
 ```
 
@@ -29,17 +29,15 @@ Add classes to create paddings and margins.
 The following header has a <b>m</b>argin-<b>t</b>op with the size of **xl** (which is 64px by default):
 ```html
 <body>
-<header class="mt-xl>This is the header.</header>
+<header class="mt-xl">This is the header.</header>
 </body>
 ```
 
-This elements have no padding:
+These elements have no padding:
 ```html
 <body>
-<!-- Read "margin-vertical-null margin-horizontal-auto" -->
-<nav class="mv-n mh-a">
-  <a href="/">Home</a>
-</nav>
+<h1 class="p-n">Lorem ipsum</h1>
+<h2 class="p-n">Dolor sit</h2>
 </body>
 ```
 
@@ -53,7 +51,7 @@ This navigation is centered:
 </body>
 ```
 
-All properties get `!important` as you should only
+All properties have `!important` as you should only add those classes, if you definitely want a specific behavior.
 
 ### How it works
 
@@ -61,30 +59,32 @@ All classes are composed of some simple parts.
 
 #### 1. Property shortcut
 ```
-m       margin
-OR
-p       padding
+m         margin
+   -OR-
+p         padding
 ```
 
 
 #### 2. Direction
 ```
-t       top
-b       bottom
-r       right
-l       left
-v       vertical
-h       horizontal
+t         top
+b         bottom
+r         right
+l         left
+
+v         vertical
+h         horizontal
+
+(none)    No direction specified means *all* directions (like in `margin: 8px;`)
 
 ```
-No direction specified means *all* directions (like in `margin: 8px;`)
 
 #### 3. Delimiter
 ```
--       normal delimiter
---      negative value
+-         positive value
+--        negative value
 ```
-Examples:
+Example:
 ```css
 .mt-xs  { margin-top: 4px }
 .mt--xs { margin-top: -4px }
@@ -92,13 +92,13 @@ Examples:
 
 #### 4. Size
 ```
-xxs      2px
-xs       4px
-s        8px
-m        16px
-l        32px
-xl       64px
-xxl      128px
+xxs        2px
+xs         4px
+s          8px
+m          16px
+l          32px
+xl         64px
+xxl        128px
 ```
 
 #### Possible margin classes
@@ -129,5 +129,5 @@ m-a        margin: auto
 ## Individualize
 1. Install Sass (google it).
 2. Run `npm install`
-3. Change things in `source/`
+3. Change things in `source/` ()
 4. Run `gulp` or `gulp deploy`
