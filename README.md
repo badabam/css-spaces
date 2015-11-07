@@ -53,11 +53,11 @@ This navigation is centered:
 
 All properties have `!important` as you should only add those classes, if you definitely want a specific behavior.
 
-### How it works
+## How it works
 
 All classes are composed of some simple parts.
 
-#### 1. Property shortcut
+### 1. Property shortcut
 ```
 m         margin
    -OR-
@@ -65,7 +65,7 @@ p         padding
 ```
 
 
-#### 2. Direction
+### 2. Direction
 ```
 t         top
 b         bottom
@@ -79,7 +79,7 @@ h         horizontal
 
 ```
 
-#### 3. Delimiter
+### 3. Delimiter
 ```
 -         positive value
 --        negative value
@@ -90,7 +90,7 @@ Example:
 .mt--xs { margin-top: -4px }
 ```
 
-#### 4. Size
+### 4. Size
 ```
 xxs        2px
 xs         4px
@@ -101,7 +101,7 @@ xl         64px
 xxl        128px
 ```
 
-#### Possible margin classes
+### Possible margin classes
 
 This are just a few examples. You'll get the point. Of course you can use all the others from `xxs` to `xxl` as well.
 
