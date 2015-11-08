@@ -100,6 +100,7 @@ m          16px
 l          32px
 xl         64px
 xxl        128px
+auto       auto
 ```
 
 ### Possible classes (normal syntax)
