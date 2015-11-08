@@ -36,8 +36,8 @@ The following header has a <b>m</b>argin-<b>t</b>op with the size of **xl** (whi
 These elements have no padding:
 ```html
 <body>
-<h1 class="p-n">Lorem ipsum</h1>
-<h2 class="p-n">Dolor sit</h2>
+<h1 class="p-0">Lorem ipsum</h1>
+<h2 class="p-0">Dolor sit</h2>
 </body>
 ```
 
@@ -45,7 +45,7 @@ This navigation is centered:
 ```html
 <body>
 <!-- Read "margin-vertical-null margin-horizontal-auto" -->
-<nav class="mv-n mh-a">
+<nav class="mv-0 mh-a">
   <a href="/">Home</a>
 </nav>
 </body>
