@@ -2,7 +2,7 @@
 A simple CSS spacing library for margins, paddings (and more later ...) written in Sass (SCSS)
 
 ## Why another css library?
-Many libraries do everything: margins, buttons, grid, helpers. CSS Spaces just adds **some classes to add spaces between elements**. Use it with whatever framework or lib you like.
+Many libraries try to do everything: sizes, typography, buttons, grid, helpers. CSS Spaces concentrates on one thing only: **some classes to add spaces between elements**. Use it with whatever framework or library you like.
 
 ## Install with bower
 ```shell
@@ -20,7 +20,7 @@ Include the spaces.css to your website:
 ```html
 <head>
 <!-- other stuff -->
-<link rel="stylesheet" href="bower_components/css-spaces/dist/spaces.css">
+<link rel="stylesheet" href="path/to/spaces.css">
 </head>
 ```
 
@@ -92,6 +92,7 @@ Example:
 
 ### 4. Size
 ```
+0          0px
 xxs        2px
 xs         4px
 s          8px
@@ -101,29 +102,68 @@ xl         64px
 xxl        128px
 ```
 
-### Possible margin classes
+### Possible classes (normal syntax)
 
-This are just a few examples. You'll get the point. Of course you can use all the others from `xxs` to `xxl` as well.
+The following example just uses one size: s (4px). There is also `xxs - xxl` and `0` and `a` (which is auto).
+
+Margin classes (they start with **m**) can have positive and negative values, padding classes (replace the leading **m** with a **p**) just have positive values.
 
 ```
-mt-xs      margin-top: 2px
-mr-xs      margin-right: 2px
-mb-xs      margin-bottom: 2px
-ml-xs      margin-left: 2px
+mt-s      margin-top: 4px
+mr-s      margin-right: 4px
+mb-s      margin-bottom: 4px
+ml-s      margin-left: 4px
 
-ml--xs     margin-left: -2px
+mh-s      margin-left: 4px; margin-right: 4px
+mv-s      margin-top: 4px; margin-bottom: 4px
 
-mh-xs      margin-left: 2px; margin-right: 2px
-mv-xs      margin-top: 2px; margin-bottom: 2px
+m-s       margin: 4px
 
-mh--xs     margin-left: -2px; margin-right: -2px
+mt--s      margin-top: -4px
+mr--s      margin-right: -4px
+mb--s      margin-bottom: -4px
+ml--s      margin-left: -4px
 
+mh--s      margin-left: -4px; margin-right: -4px
+mv--s      margin-top: -4px; margin-bottom: -4px
+
+m--s       margin: -4px
+
+// there is also 'auto'
+mt-a       margin-top: auto
+mr-a       margin-right: auto
+mb-a       margin-bottom: auto
 ml-a       margin-left: auto
-ml-n       margin-left: none
 
-m-xs       margin: 2px
-m-n        margin: none
+mh-a       margin-left: auto; margin-right: auto
+mv-a       margin-top: auto; margin-bottom: auto
+
 m-a        margin: auto
+
+// padding classes would be like this:
+pt-s       padding-top: 4px;
+pr-s       padding-right: 4px;
+// etc.
+```
+
+### We also support the (not so cool) Bootstrap 4 syntax
+```
+m-t-0       margin-top: 0
+m-t         margin-top: 1rem // no-name means "sm (small)"
+m-t-md      margin-top: 1.5rem
+m-t-lg      margin-top: 3rem
+
+m-a-lg      margin: 3rem // a means "all"
+```
+We added negative margins as well (they are missing in Bootstrap 4). Due to the weird syntax for small (no suffix instead of the logical `-sm`), the syntax for negative values is as follows.
+
+```
+m-neg        margin: -1rem
+m-t-xs-neg   margin-top: -0.5rem
+m-t-neg      margin-top: -1.0rem
+m-t-md-neg   margin-top: -1.5rem
+m-t-lg-neg   margin-top: -3rem
+
 ```
 
 ## Individualize

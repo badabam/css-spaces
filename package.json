@@ -1,7 +1,7 @@
 {
   "name": "css-spaces",
   "version": "0.1.4",
-  "description": "A simple CSS spacing library for margins, paddings, widths, heights and more",
+  "description": "A simple CSS spacing library for margins, paddings and more",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

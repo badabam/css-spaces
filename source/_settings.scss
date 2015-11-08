@@ -10,13 +10,24 @@ $l: 32px;
 $xl: 64px;
 $xxl: 128px;
 
+// naming delimiters
+$delimiter1: '';
+$delimiter2: '-';
 
-$sizes: (  a: auto,
-           n: 0,
-         xxs: $xxs,
-          xs: $xs,
-           s: $s,
-           m: $m,
-           l: $l,
-          xl: $xl,
-         xxl: $xxl);
+// other naming
+$a: ''; // all values (top, right, bottom, left);
+$h: 'h'; // horizontal values (left, right)
+$v: 'v'; // vertical values (top, bottom)
+$auto: 'a';
+$null: '0';
+$neg: '-';
+
+$sizes: ($auto: auto,
+         $null: 0,
+           xxs: $xxs,
+            xs: $xs,
+             s: $s,
+             m: $m,
+             l: $l,
+            xl: $xl,
+           xxl: $xxl);

@@ -1,6 +1,6 @@
 {
   "name": "css-spaces",
-  "description": "A simple CSS spacing library for margins, paddings, widths, heights and more",
+  "description": "A simple CSS spacing library for margins, paddings and more",
   "main": "dist/spaces.css",
   "authors": [
     "Jeremias Erbs <j@badabam.de>"

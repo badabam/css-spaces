@@ -1,22 +1,41 @@
 // optional prefix to prevent naming collisions
-$prefix: 'bs-';
+$prefix: '';
+
+/*
+Bootstrap 4 alpha currently uses 1rem as the base size for sizes.
+@see https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
+If you want to start using this sizes today, use our version
+*/
+$spacer: 1rem !default;
 
 // sizes
-$xxs: 2px;
-$xs: 4px;
-$s: 8px;
-$m: 16px;
-$l: 32px;
-$xl: 64px;
-$xxl: 128px;
+$xxs: $spacer * 0.25; // no official bootstrap size
+$xs:  $spacer * 0.5;
+$s:   $spacer * 1.0;
+$m:   $spacer * 1.5;
+$l:   $spacer * 3.0;
+$xl:  $spacer * 4.5;
+$xxl: $spacer * 6.0; // no official bootstrap size
 
+// naming delimiters
+$delimiter1: '-';
+$delimiter2: '-';
 
-$sizes: (  a: auto,
-           n: 0,
-         xxs: $xxs,
-          xs: $xs,
-          sm: $s,
-          md: $m,
-          lg: $l,
-          xl: $xl,
-         xxl: $xxl);
+// other naming
+$a: 'a'; // all values (top, right, bottom, left);
+$h: 'x'; // horizontal values (left, right)
+$v: 'y'; // vertical values (top, bottom)
+$auto: 'auto';
+$null: '0';
+$neg: '-neg';
+
+$sizes: ( auto: auto, // no official bootstrap size
+           "0": 0,
+           xxs: $xxs, // no official bootstrap size
+            xs: $xs,
+            '': $s,
+            md: $m,
+            lg: $l,
+            xl: $xl,
+           xxl: $xxl // no official bootstrap size
+        );

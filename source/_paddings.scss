@@ -1,44 +1,34 @@
 @each $name, $size in $sizes {
 
   /* padding-top */
-  .#{$prefix}mt-#{$name} {
+  .#{$prefix}m#{$delimiter1}t#{if($name != '', $delimiter2 + $name, '')} {
     padding-top: #{$size} !important;
   }
   /* padding-right */
-  .#{$prefix}mr-#{$name} {
+  .#{$prefix}m#{$delimiter1}r#{if($name != '', $delimiter2 + $name, '')} {
     padding-right: #{$size} !important;
   }
   /* padding-bottom */
-  .#{$prefix}mb-#{$name} {
+  .#{$prefix}m#{$delimiter1}b#{if($name != '', $delimiter2 + $name, '')} {
     padding-bottom: #{$size} !important;
   }
   /* padding-left */
-  .#{$prefix}ml-#{$name} {
+  .#{$prefix}m#{$delimiter1}l#{if($name != '', $delimiter2 + $name, '')} {
     padding-left: #{$size} !important;
   }
 
   /* horizontal paddings */
-  .#{$prefix}mh-#{$name} {
+  .#{$prefix}m#{$delimiter1}#{$h}#{if($name != '', $delimiter2 + $name, '')} {
     padding-left: #{$size} !important;
     padding-right: #{$size} !important;
   }
   /* vertical paddings */
-  .#{$prefix}mv-#{$name} {
+  .#{$prefix}m#{$delimiter1}#{$v}#{if($name != '', $delimiter2 + $name, '')} {
     padding-top: #{$size} !important;
     padding-bottom: #{$size} !important;
   }
   /* all paddings */
-  .#{$prefix}m-#{$name} {
+  .#{$prefix}m#{$delimiter1}#{$a}#{if($name != '', $delimiter2 + $name, '')} {
     padding: #{$size} !important;
   }
-}
-
-/* all paddings: auto */
-.m#{$prefix}-a {
-  padding: auto !important;
-}
-
-/* all paddings: 0 ("null") */
-.m#{$prefix}-n {
-  padding: 0 !important;
 }
