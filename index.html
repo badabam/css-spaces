@@ -27,7 +27,7 @@
 <h2>
 <a id="why-another-css-library" class="anchor" href="#why-another-css-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why another css library?</h2>
 
-<p>Many libraries do everything: margins, buttons, grid, helpers. CSS Spaces just adds <strong>some classes to add spaces between elements</strong>. Use it with whatever framework or lib you like.</p>
+<p>Many libraries try to do everything: sizes, typography, buttons, grid, helpers. CSS Spaces concentrates on one thing only: <strong>some classes to add spaces between elements</strong>. Use it with whatever framework or library you like.</p>
 
 <h2>
 <a id="install-with-bower" class="anchor" href="#install-with-bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install with bower</h2>
@@ -46,7 +46,7 @@
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">head</span>&gt;
 <span class="pl-c">&lt;!-- other stuff --&gt;</span>
-&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>bower_components/css-spaces/dist/spaces.css<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>path/to/spaces.css<span class="pl-pds">"</span></span>&gt;
 &lt;/<span class="pl-ent">head</span>&gt;</pre></div>
 
 <p>Add classes to create paddings and margins.</p>
@@ -60,36 +60,36 @@
 <p>These elements have no padding:</p>
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">body</span>&gt;
-&lt;<span class="pl-ent">h1</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>p-n<span class="pl-pds">"</span></span>&gt;Lorem ipsum&lt;/<span class="pl-ent">h1</span>&gt;
-&lt;<span class="pl-ent">h2</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>p-n<span class="pl-pds">"</span></span>&gt;Dolor sit&lt;/<span class="pl-ent">h2</span>&gt;
+&lt;<span class="pl-ent">h1</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>p-0<span class="pl-pds">"</span></span>&gt;Lorem ipsum&lt;/<span class="pl-ent">h1</span>&gt;
+&lt;<span class="pl-ent">h2</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>p-0<span class="pl-pds">"</span></span>&gt;Dolor sit&lt;/<span class="pl-ent">h2</span>&gt;
 &lt;/<span class="pl-ent">body</span>&gt;</pre></div>
 
 <p>This navigation is centered:</p>
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">body</span>&gt;
 <span class="pl-c">&lt;!-- Read "margin-vertical-null margin-horizontal-auto" --&gt;</span>
-&lt;<span class="pl-ent">nav</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>mv-n mh-a<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">nav</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>mv-0 mh-a<span class="pl-pds">"</span></span>&gt;
   &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>/<span class="pl-pds">"</span></span>&gt;Home&lt;/<span class="pl-ent">a</span>&gt;
 &lt;/<span class="pl-ent">nav</span>&gt;
 &lt;/<span class="pl-ent">body</span>&gt;</pre></div>
 
 <p>All properties have <code>!important</code> as you should only add those classes, if you definitely want a specific behavior.</p>
 
-<h3>
-<a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How it works</h3>
+<h2>
+<a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How it works</h2>
 
 <p>All classes are composed of some simple parts.</p>
 
-<h4>
-<a id="1-property-shortcut" class="anchor" href="#1-property-shortcut" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Property shortcut</h4>
+<h3>
+<a id="1-property-shortcut" class="anchor" href="#1-property-shortcut" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Property shortcut</h3>
 
 <pre><code>m         margin
    -OR-
 p         padding
 </code></pre>
 
-<h4>
-<a id="2-direction" class="anchor" href="#2-direction" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Direction</h4>
+<h3>
+<a id="2-direction" class="anchor" href="#2-direction" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Direction</h3>
 
 <pre><code>t         top
 b         bottom
@@ -103,8 +103,8 @@ h         horizontal
 
 </code></pre>
 
-<h4>
-<a id="3-delimiter" class="anchor" href="#3-delimiter" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Delimiter</h4>
+<h3>
+<a id="3-delimiter" class="anchor" href="#3-delimiter" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Delimiter</h3>
 
 <pre><code>-         positive value
 --        negative value
@@ -115,10 +115,11 @@ h         horizontal
 <div class="highlight highlight-source-css"><pre><span class="pl-e">.mt-xs</span>  { <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">4<span class="pl-k">px</span></span> }
 <span class="pl-e">.mt--xs</span> { <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">-4<span class="pl-k">px</span></span> }</pre></div>
 
-<h4>
-<a id="4-size" class="anchor" href="#4-size" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Size</h4>
+<h3>
+<a id="4-size" class="anchor" href="#4-size" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Size</h3>
 
-<pre><code>xxs        2px
+<pre><code>0          0px
+xxs        2px
 xs         4px
 s          8px
 m          16px
@@ -127,29 +128,69 @@ xl         64px
 xxl        128px
 </code></pre>
 
-<h4>
-<a id="possible-margin-classes" class="anchor" href="#possible-margin-classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Possible margin classes</h4>
+<h3>
+<a id="possible-classes-normal-syntax" class="anchor" href="#possible-classes-normal-syntax" aria-hidden="true"><span class="octicon octicon-link"></span></a>Possible classes (normal syntax)</h3>
 
-<p>This are just a few examples. You'll get the point. Of course you can use all the others from <code>xxs</code> to <code>xxl</code> as well.</p>
+<p>The following example just uses one size: s (4px). There is also <code>xxs - xxl</code> and <code>0</code> and <code>a</code> (which is auto).</p>
 
-<pre><code>mt-xs      margin-top: 2px
-mr-xs      margin-right: 2px
-mb-xs      margin-bottom: 2px
-ml-xs      margin-left: 2px
+<p>Margin classes (they start with <strong>m</strong>) can have positive and negative values, padding classes (replace the leading <strong>m</strong> with a <strong>p</strong>) just have positive values.</p>
 
-ml--xs     margin-left: -2px
+<pre><code>mt-s      margin-top: 4px
+mr-s      margin-right: 4px
+mb-s      margin-bottom: 4px
+ml-s      margin-left: 4px
 
-mh-xs      margin-left: 2px; margin-right: 2px
-mv-xs      margin-top: 2px; margin-bottom: 2px
+mh-s      margin-left: 4px; margin-right: 4px
+mv-s      margin-top: 4px; margin-bottom: 4px
 
-mh--xs     margin-left: -2px; margin-right: -2px
+m-s       margin: 4px
 
+mt--s      margin-top: -4px
+mr--s      margin-right: -4px
+mb--s      margin-bottom: -4px
+ml--s      margin-left: -4px
+
+mh--s      margin-left: -4px; margin-right: -4px
+mv--s      margin-top: -4px; margin-bottom: -4px
+
+m--s       margin: -4px
+
+// there is also 'auto'
+mt-a       margin-top: auto
+mr-a       margin-right: auto
+mb-a       margin-bottom: auto
 ml-a       margin-left: auto
-ml-n       margin-left: none
 
-m-xs       margin: 2px
-m-n        margin: none
+mh-a       margin-left: auto; margin-right: auto
+mv-a       margin-top: auto; margin-bottom: auto
+
 m-a        margin: auto
+
+// padding classes would be like this:
+pt-s       padding-top: 4px;
+pr-s       padding-right: 4px;
+// etc.
+</code></pre>
+
+<h3>
+<a id="we-also-support-the-not-so-cool-bootstrap-4-syntax" class="anchor" href="#we-also-support-the-not-so-cool-bootstrap-4-syntax" aria-hidden="true"><span class="octicon octicon-link"></span></a>We also support the (not so cool) Bootstrap 4 syntax</h3>
+
+<pre><code>m-t-0       margin-top: 0
+m-t         margin-top: 1rem // no-name means "sm (small)"
+m-t-md      margin-top: 1.5rem
+m-t-lg      margin-top: 3rem
+
+m-a-lg      margin: 3rem // a means "all"
+</code></pre>
+
+<p>We added negative margins as well (they are missing in Bootstrap 4). Due to the weird syntax for small (no suffix instead of the logical <code>-sm</code>), the syntax for negative values is as follows.</p>
+
+<pre><code>m-neg        margin: -1rem
+m-t-xs-neg   margin-top: -0.5rem
+m-t-neg      margin-top: -1.0rem
+m-t-md-neg   margin-top: -1.5rem
+m-t-lg-neg   margin-top: -3rem
+
 </code></pre>
 
 <h2>
