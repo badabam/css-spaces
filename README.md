@@ -26,7 +26,7 @@ Include the spaces.css to your website:
 
 Add classes to create paddings and margins.
 
-The following header has a <b>m</b>argin-<b>t</b>op with the size of **xl** (which is 64px by default):
+The following header has a <b>m</b>argin-<b>t</b>op with the size of **xl** (which is 6rem by default):
 ```html
 <body>
 <header class="mt-xl">This is the header.</header>
@@ -93,7 +93,7 @@ Example:
 
 ### 4. Size
 ```
-0          0px
+0          0
 xxs        0.25rem
 xs         0.5rem
 s          1rem
