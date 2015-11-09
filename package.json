@@ -1,6 +1,6 @@
 {
   "name": "css-spaces",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "A simple CSS spacing library for margins, paddings and more",
   "main": "gulpfile.js",
   "scripts": {
