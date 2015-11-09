@@ -93,10 +93,10 @@ Example:
 ### 4. Size
 ```
 0          0px
-xxs        2px
-xs         4px
-s          8px
-m          16px
+xxs        4px
+xs         8px
+s          16px
+m          24px
 l          32px
 xl         64px
 xxl        128px
