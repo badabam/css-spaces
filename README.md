@@ -86,8 +86,8 @@ h         horizontal
 ```
 Example:
 ```css
-.mt-xs  { margin-top: 4px }
-.mt--xs { margin-top: -4px }
+.mt-xs  { margin-top: 8px }
+.mt--xs { margin-top: -8px }
 ```
 
 ### 4. Size
@@ -110,25 +110,25 @@ The following example just uses one size: s (4px). There is also `xxs - xxl` and
 Margin classes (they start with **m**) can have positive and negative values, padding classes (replace the leading **m** with a **p**) just have positive values.
 
 ```
-mt-s      margin-top: 4px
-mr-s      margin-right: 4px
-mb-s      margin-bottom: 4px
-ml-s      margin-left: 4px
+mt-s      margin-top: 16px
+mr-s      margin-right: 16px
+mb-s      margin-bottom: 16px
+ml-s      margin-left: 16px
 
-mh-s      margin-left: 4px; margin-right: 4px
-mv-s      margin-top: 4px; margin-bottom: 4px
+mh-s      margin-left: 16px; margin-right: 16px
+mv-s      margin-top: 16px; margin-bottom: 16px
 
-m-s       margin: 4px
+m-s       margin: 16px
 
-mt--s      margin-top: -4px
-mr--s      margin-right: -4px
-mb--s      margin-bottom: -4px
-ml--s      margin-left: -4px
+mt--s      margin-top: -16px
+mr--s      margin-right: -16px
+mb--s      margin-bottom: -16px
+ml--s      margin-left: -16px
 
-mh--s      margin-left: -4px; margin-right: -4px
-mv--s      margin-top: -4px; margin-bottom: -4px
+mh--s      margin-left: -16px; margin-right: -16px
+mv--s      margin-top: -16px; margin-bottom: -16px
 
-m--s       margin: -4px
+m--s       margin: -16px
 
 // there is also 'auto'
 mt-a       margin-top: auto
@@ -142,8 +142,8 @@ mv-a       margin-top: auto; margin-bottom: auto
 m-a        margin: auto
 
 // padding classes would be like this:
-pt-s       padding-top: 4px;
-pr-s       padding-right: 4px;
+pt-s       padding-top: 16px;
+pr-s       padding-right: 16px;
 // etc.
 ```
 
