@@ -53,8 +53,9 @@ This navigation is centered:
 
 All properties have `!important` as you should only add those classes, if you definitely want a specific behavior.
 
-## How it works
+Sizes are defined in `rem`. 1 rem is the root font size. So if you change the `font-size` of the body, you change the size of rem.
 
+## How it works
 All classes are composed of some simple parts.
 
 ### 1. Property shortcut
@@ -86,49 +87,49 @@ h         horizontal
 ```
 Example:
 ```css
-.mt-xs  { margin-top: 8px }
-.mt--xs { margin-top: -8px }
+.mt-xs  { margin-top: 0.5rem }
+.mt--xs { margin-top: 0.5rem }
 ```
 
 ### 4. Size
 ```
 0          0px
-xxs        4px
-xs         8px
-s          16px
-m          24px
-l          32px
-xl         64px
-xxl        128px
+xxs        0.25rem
+xs         0.5rem
+s          1rem
+m          2rem
+l          4rem
+xl         6rem
+xxl        8rem
 auto       auto
 ```
 
 ### Possible classes (normal syntax)
 
-The following example just uses one size: s (4px). There is also `xxs - xxl` and `0` and `a` (which is auto).
+The following example just uses one size: s (1rem). There is also `xxs - xxl` and `0` and `a` (which is auto).
 
 Margin classes (they start with **m**) can have positive and negative values, padding classes (replace the leading **m** with a **p**) just have positive values.
 
 ```
-mt-s      margin-top: 16px
-mr-s      margin-right: 16px
-mb-s      margin-bottom: 16px
-ml-s      margin-left: 16px
+mt-s      margin-top: 1rem
+mr-s      margin-right: 1rem
+mb-s      margin-bottom: 1rem
+ml-s      margin-left: 1rem
 
-mh-s      margin-left: 16px; margin-right: 16px
-mv-s      margin-top: 16px; margin-bottom: 16px
+mh-s      margin-left: 1rem; margin-right: 1rem
+mv-s      margin-top: 1rem; margin-bottom: 1rem
 
-m-s       margin: 16px
+m-s       margin: 1rem
 
-mt--s      margin-top: -16px
-mr--s      margin-right: -16px
-mb--s      margin-bottom: -16px
-ml--s      margin-left: -16px
+mt--s      margin-top: -1rem
+mr--s      margin-right: -1rem
+mb--s      margin-bottom: -1rem
+ml--s      margin-left: -1rem
 
-mh--s      margin-left: -16px; margin-right: -16px
-mv--s      margin-top: -16px; margin-bottom: -16px
+mh--s      margin-left: -1rem; margin-right: -1rem
+mv--s      margin-top: -1rem; margin-bottom: -1rem
 
-m--s       margin: -16px
+m--s       margin: -1rem
 
 // there is also 'auto'
 mt-a       margin-top: auto
@@ -142,8 +143,8 @@ mv-a       margin-top: auto; margin-bottom: auto
 m-a        margin: auto
 
 // padding classes would be like this:
-pt-s       padding-top: 16px;
-pr-s       padding-right: 16px;
+pt-s       padding-top: 1rem;
+pr-s       padding-right: 1rem;
 // etc.
 ```
 
