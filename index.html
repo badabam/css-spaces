@@ -51,7 +51,7 @@
 
 <p>Add classes to create paddings and margins.</p>
 
-<p>The following header has a <b>m</b>argin-<b>t</b>op with the size of <strong>xl</strong> (which is 6rem by default):</p>
+<p>The following header has a <b>m</b>argin-<b>t</b>op with the size of <strong>xl</strong>:</p>
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">body</span>&gt;
 &lt;<span class="pl-ent">header</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>mt-xl<span class="pl-pds">"</span></span>&gt;This is the header.&lt;/<span class="pl-ent">header</span>&gt;
@@ -75,7 +75,7 @@
 
 <p>All properties have <code>!important</code> as you should only add those classes, if you definitely want a specific behavior.</p>
 
-<p>Sizes are defined in <code>rem</code>. 1 rem is the root font size. So if you change the <code>font-size</code> of the body, you change the size of rem.</p>
+<p>Sizes are defined in <code>px</code>.</p>
 
 <h2>
 <a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How it works</h2>
@@ -114,49 +114,51 @@ h         horizontal
 
 <p>Example:</p>
 
-<div class="highlight highlight-source-css"><pre><span class="pl-e">.mt-xs</span>  { <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">0.5<span class="pl-k">rem</span></span> }
-<span class="pl-e">.mt--xs</span> { <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">0.5<span class="pl-k">rem</span></span> }</pre></div>
+<div class="highlight highlight-source-css"><pre><span class="pl-e">.mt-xs</span>  { <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">16<span class="pl-k">px</span></span> }
+<span class="pl-e">.mt--xs</span> { <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">16<span class="pl-k">px</span></span> }</pre></div>
 
 <h3>
 <a id="4-size" class="anchor" href="#4-size" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Size</h3>
 
-<pre><code>0          0
-xxs        0.25rem
-xs         0.5rem
-s          1rem
-m          2rem
-l          4rem
-xl         6rem
-xxl        8rem
-auto       auto
+<pre><code>a          auto
+0          0
+xxxs       4px
+xxs        8px
+xs         16px
+s          24px
+m          36px
+l          48px
+xl         72px
+xxl        96px
+xxxl       144px
 </code></pre>
 
 <h3>
 <a id="possible-classes-normal-syntax" class="anchor" href="#possible-classes-normal-syntax" aria-hidden="true"><span class="octicon octicon-link"></span></a>Possible classes (normal syntax)</h3>
 
-<p>The following example just uses one size: s (1rem). There is also <code>xxs - xxl</code> and <code>0</code> and <code>a</code> (which is auto).</p>
+<p>The following example just uses one size: s (24px). There is also <code>xxxs - xxxl</code> and <code>0</code> and <code>a</code> (which is auto).</p>
 
 <p>Margin classes (they start with <strong>m</strong>) can have positive and negative values, padding classes (replace the leading <strong>m</strong> with a <strong>p</strong>) just have positive values.</p>
 
-<pre><code>mt-s      margin-top: 1rem
-mr-s      margin-right: 1rem
-mb-s      margin-bottom: 1rem
-ml-s      margin-left: 1rem
+<pre><code>mt-s      margin-top: 24px
+mr-s      margin-right: 24px
+mb-s      margin-bottom: 24px
+ml-s      margin-left: 24px
 
-mh-s      margin-left: 1rem; margin-right: 1rem
-mv-s      margin-top: 1rem; margin-bottom: 1rem
+mh-s      margin-left: 24px; margin-right: 24px
+mv-s      margin-top: 24px; margin-bottom: 24px
 
-m-s       margin: 1rem
+m-s       margin: 24px
 
-mt--s      margin-top: -1rem
-mr--s      margin-right: -1rem
-mb--s      margin-bottom: -1rem
-ml--s      margin-left: -1rem
+mt--s      margin-top: -24px
+mr--s      margin-right: -24px
+mb--s      margin-bottom: -24px
+ml--s      margin-left: -24px
 
-mh--s      margin-left: -1rem; margin-right: -1rem
-mv--s      margin-top: -1rem; margin-bottom: -1rem
+mh--s      margin-left: -24px; margin-right: -24px
+mv--s      margin-top: -24px; margin-bottom: -24px
 
-m--s       margin: -1rem
+m--s       margin: -24px
 
 // there is also 'auto'
 mt-a       margin-top: auto
@@ -170,8 +172,8 @@ mv-a       margin-top: auto; margin-bottom: auto
 m-a        margin: auto
 
 // padding classes would be like this:
-pt-s       padding-top: 1rem;
-pr-s       padding-right: 1rem;
+pt-s       padding-top: 24px;
+pr-s       padding-right: 24px;
 // etc.
 </code></pre>
 
