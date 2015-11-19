@@ -26,7 +26,7 @@ Include the spaces.css to your website:
 
 Add classes to create paddings and margins.
 
-The following header has a <b>m</b>argin-<b>t</b>op with the size of **xl** (which is 6rem by default):
+The following header has a <b>m</b>argin-<b>t</b>op with the size of **xl**:
 ```html
 <body>
 <header class="mt-xl">This is the header.</header>
@@ -53,7 +53,7 @@ This navigation is centered:
 
 All properties have `!important` as you should only add those classes, if you definitely want a specific behavior.
 
-Sizes are defined in `rem`. 1 rem is the root font size. So if you change the `font-size` of the body, you change the size of rem.
+Sizes are defined in `px`.
 
 ## How it works
 All classes are composed of some simple parts.
@@ -87,49 +87,51 @@ h         horizontal
 ```
 Example:
 ```css
-.mt-xs  { margin-top: 0.5rem }
-.mt--xs { margin-top: 0.5rem }
+.mt-xs  { margin-top: 16px }
+.mt--xs { margin-top: 16px }
 ```
 
 ### 4. Size
 ```
+a          auto
 0          0
-xxs        0.25rem
-xs         0.5rem
-s          1rem
-m          2rem
-l          4rem
-xl         6rem
-xxl        8rem
-auto       auto
+xxxs       4px
+xxs        8px
+xs         16px
+s          24px
+m          36px
+l          48px
+xl         72px
+xxl        96px
+xxxl       144px
 ```
 
 ### Possible classes (normal syntax)
 
-The following example just uses one size: s (1rem). There is also `xxs - xxl` and `0` and `a` (which is auto).
+The following example just uses one size: s (24px). There is also `xxxs - xxxl` and `0` and `a` (which is auto).
 
 Margin classes (they start with **m**) can have positive and negative values, padding classes (replace the leading **m** with a **p**) just have positive values.
 
 ```
-mt-s      margin-top: 1rem
-mr-s      margin-right: 1rem
-mb-s      margin-bottom: 1rem
-ml-s      margin-left: 1rem
+mt-s      margin-top: 24px
+mr-s      margin-right: 24px
+mb-s      margin-bottom: 24px
+ml-s      margin-left: 24px
 
-mh-s      margin-left: 1rem; margin-right: 1rem
-mv-s      margin-top: 1rem; margin-bottom: 1rem
+mh-s      margin-left: 24px; margin-right: 24px
+mv-s      margin-top: 24px; margin-bottom: 24px
 
-m-s       margin: 1rem
+m-s       margin: 24px
 
-mt--s      margin-top: -1rem
-mr--s      margin-right: -1rem
-mb--s      margin-bottom: -1rem
-ml--s      margin-left: -1rem
+mt--s      margin-top: -24px
+mr--s      margin-right: -24px
+mb--s      margin-bottom: -24px
+ml--s      margin-left: -24px
 
-mh--s      margin-left: -1rem; margin-right: -1rem
-mv--s      margin-top: -1rem; margin-bottom: -1rem
+mh--s      margin-left: -24px; margin-right: -24px
+mv--s      margin-top: -24px; margin-bottom: -24px
 
-m--s       margin: -1rem
+m--s       margin: -24px
 
 // there is also 'auto'
 mt-a       margin-top: auto
@@ -143,8 +145,8 @@ mv-a       margin-top: auto; margin-bottom: auto
 m-a        margin: auto
 
 // padding classes would be like this:
-pt-s       padding-top: 1rem;
-pr-s       padding-right: 1rem;
+pt-s       padding-top: 24px;
+pr-s       padding-right: 24px;
 // etc.
 ```
 

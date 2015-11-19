@@ -4,6 +4,12 @@
   "description": "A simple CSS spacing library for margins, paddings and more",
   "main": "gulpfile.js",
   "scripts": {
+    "gulp": "gulp",
+    "bower": "bower",
+    "prestart": "npm install",
+    "build": "npm install && gulp",
+    "start": "gulp dev",
+    "postinstall": "bower install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

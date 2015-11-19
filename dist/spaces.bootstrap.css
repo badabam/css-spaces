@@ -49,6 +49,27 @@ If you want to start using this sizes today, use our version
 .m-a-0 { margin: 0 !important; }
 
 /* margin-top */
+.m-t-xxxs { margin-top: 0.2rem !important; }
+
+/* margin-right */
+.m-r-xxxs { margin-right: 0.2rem !important; }
+
+/* margin-bottom */
+.m-b-xxxs { margin-bottom: 0.2rem !important; }
+
+/* margin-left */
+.m-l-xxxs { margin-left: 0.2rem !important; }
+
+/* horizontal margins */
+.m-x-xxxs { margin-left: 0.2rem !important; margin-right: 0.2rem !important; }
+
+/* vertical margins */
+.m-y-xxxs { margin-top: 0.2rem !important; margin-bottom: 0.2rem !important; }
+
+/* all margins */
+.m-a-xxxs { margin: 0.2rem !important; }
+
+/* margin-top */
 .m-t-xxs { margin-top: 0.25rem !important; }
 
 /* margin-right */
@@ -195,7 +216,49 @@ If you want to start using this sizes today, use our version
 /* all margins */
 .m-a-xxl { margin: 6rem !important; }
 
+/* margin-top */
+.m-t-xxxl { margin-top: 8rem !important; }
+
+/* margin-right */
+.m-r-xxxl { margin-right: 8rem !important; }
+
+/* margin-bottom */
+.m-b-xxxl { margin-bottom: 8rem !important; }
+
+/* margin-left */
+.m-l-xxxl { margin-left: 8rem !important; }
+
+/* horizontal margins */
+.m-x-xxxl { margin-left: 8rem !important; margin-right: 8rem !important; }
+
+/* vertical margins */
+.m-y-xxxl { margin-top: 8rem !important; margin-bottom: 8rem !important; }
+
+/* all margins */
+.m-a-xxxl { margin: 8rem !important; }
+
 /* NEGATIVE MARGINS */
+/* margin-top */
+.m-t-neg-xxxs { margin-top: -0.2rem !important; }
+
+/* margin-right */
+.m-r-neg-xxxs { margin-right: -0.2rem !important; }
+
+/* margin-bottom */
+.m-b-neg-xxxs { margin-bottom: -0.2rem !important; }
+
+/* margin-left */
+.m-l-neg-xxxs { margin-left: -0.2rem !important; }
+
+/* horizontal margins */
+.m-x-neg-xxxs { margin-left: -0.2rem !important; margin-right: -0.2rem !important; }
+
+/* vertical margins */
+.m-y-neg-xxxs { margin-top: -0.2rem !important; margin-bottom: -0.2rem !important; }
+
+/* all margins */
+.m-a-neg-xxxs { margin: -0.2rem !important; }
+
 /* margin-top */
 .m-t-neg-xxs { margin-top: -0.25rem !important; }
 
@@ -343,6 +406,27 @@ If you want to start using this sizes today, use our version
 /* all margins */
 .m-a-neg-xxl { margin: -6rem !important; }
 
+/* margin-top */
+.m-t-neg-xxxl { margin-top: -8rem !important; }
+
+/* margin-right */
+.m-r-neg-xxxl { margin-right: -8rem !important; }
+
+/* margin-bottom */
+.m-b-neg-xxxl { margin-bottom: -8rem !important; }
+
+/* margin-left */
+.m-l-neg-xxxl { margin-left: -8rem !important; }
+
+/* horizontal margins */
+.m-x-neg-xxxl { margin-left: -8rem !important; margin-right: -8rem !important; }
+
+/* vertical margins */
+.m-y-neg-xxxl { margin-top: -8rem !important; margin-bottom: -8rem !important; }
+
+/* all margins */
+.m-a-neg-xxxl { margin: -8rem !important; }
+
 /* padding-top */
 .p-t-auto { padding-top: auto !important; }
 
@@ -384,6 +468,27 @@ If you want to start using this sizes today, use our version
 
 /* all paddings */
 .p-a-0 { padding: 0 !important; }
+
+/* padding-top */
+.p-t-xxxs { padding-top: 0.2rem !important; }
+
+/* padding-right */
+.p-r-xxxs { padding-right: 0.2rem !important; }
+
+/* padding-bottom */
+.p-b-xxxs { padding-bottom: 0.2rem !important; }
+
+/* padding-left */
+.p-l-xxxs { padding-left: 0.2rem !important; }
+
+/* horizontal paddings */
+.p-x-xxxs { padding-left: 0.2rem !important; padding-right: 0.2rem !important; }
+
+/* vertical paddings */
+.p-y-xxxs { padding-top: 0.2rem !important; padding-bottom: 0.2rem !important; }
+
+/* all paddings */
+.p-a-xxxs { padding: 0.2rem !important; }
 
 /* padding-top */
 .p-t-xxs { padding-top: 0.25rem !important; }
@@ -531,3 +636,43 @@ If you want to start using this sizes today, use our version
 
 /* all paddings */
 .p-a-xxl { padding: 6rem !important; }
+
+/* padding-top */
+.p-t-xxxl { padding-top: 8rem !important; }
+
+/* padding-right */
+.p-r-xxxl { padding-right: 8rem !important; }
+
+/* padding-bottom */
+.p-b-xxxl { padding-bottom: 8rem !important; }
+
+/* padding-left */
+.p-l-xxxl { padding-left: 8rem !important; }
+
+/* horizontal paddings */
+.p-x-xxxl { padding-left: 8rem !important; padding-right: 8rem !important; }
+
+/* vertical paddings */
+.p-y-xxxl { padding-top: 8rem !important; padding-bottom: 8rem !important; }
+
+/* all paddings */
+.p-a-xxxl { padding: 8rem !important; }
+
+/* widths */
+.wa { width: auto !important; }
+
+.w0 { width: 0 !important; }
+
+.w5 { width: 5% !important; }
+
+.w10 { width: 10% !important; }
+
+.w25 { width: 25% !important; }
+
+.w33 { width: 33.33333% !important; }
+
+.w50 { width: 50% !important; }
+
+.w66 { width: 66.66667% !important; }
+
+.w100 { width: 100% !important; }

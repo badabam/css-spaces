@@ -2,13 +2,15 @@
 $prefix: '';
 
 // sizes
-$xxs: 0.25rem;
-$xs: 0.5rem;
-$s: 1rem;
-$m: 2rem;
-$l: 4rem;
-$xl: 6rem;
-$xxl: 8rem;
+$xxxs: 4px;
+$xxs: 8px;
+$xs: 16px;
+$s: 24px;
+$m: 36px;
+$l: $s * 2;
+$xl: $s * 2.5;
+$xxl: $s * 4;
+$xxxl: $s * 6;
 
 // naming delimiters
 $delimiter1: '';
@@ -22,12 +24,28 @@ $auto: 'a';
 $null: '0';
 $neg: '-';
 
-$sizes: ($auto: auto,
-         $null: 0,
-           xxs: $xxs,
-            xs: $xs,
-             s: $s,
-             m: $m,
-             l: $l,
-            xl: $xl,
-           xxl: $xxl);
+$sizes: (
+  $auto: auto,
+  $null: 0,
+  xxxs : $xxxs,
+  xxs  : $xxs,
+  xs   : $xs,
+  s    : $s,
+  m    : $m,
+  l    : $l,
+  xl   : $xl,
+  xxl  : $xxl,
+  xxxl : $xxxl
+);
+
+$widths: (
+  a  : auto,
+  0  : 0,
+  5  : 5%,
+  10 : 10%,
+  25 : 25%,
+  33 : (100% / 3),
+  50 : 50%,
+  66 : (100% / 3 * 2),
+  100: 100%
+);
