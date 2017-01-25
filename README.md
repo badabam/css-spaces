@@ -20,7 +20,7 @@ Include the spaces.css to your website:
 ```html
 <head>
 <!-- other stuff -->
-<link rel="stylesheet" href="path/to/spaces.css">
+<link rel="stylesheet" href="node_modules/css-spaces/dist/spaces.min.css">
 </head>
 ```
 
