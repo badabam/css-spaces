@@ -88,7 +88,7 @@ h         horizontal
 Example:
 ```css
 .mt-xs  { margin-top: 16px }
-.mt--xs { margin-top: 16px }
+.mt--xs { margin-top: -16px }
 ```
 
 ### 4. Size
